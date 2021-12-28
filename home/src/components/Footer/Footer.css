@@ -1,0 +1,9 @@
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  padding: var(--space-2);
+  color: var(--color-white-light);
+  background-color: var(--color-primary-main);
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.3);
+}
