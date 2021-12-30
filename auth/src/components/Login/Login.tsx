@@ -14,10 +14,10 @@ const Login = () => {
 
   const user = useAppSelector(selectLogin).user;
   const isLoggedIn = useAppSelector(selectLogin).isLoggedIn;
+  const status = useAppSelector(selectLogin).status;
 
   const handleLogin = async () => {
     await dispatch(signIn({ email, password }));
-    console.log("nav");
 
     navigate("/");
   };
@@ -47,8 +47,12 @@ const Login = () => {
       </div>
 
       <div className="group">
-        <button type="button" onClick={handleLogin}>
-          Login
+        <button
+          type="button"
+          onClick={handleLogin}
+          disabled={status === "loading"}
+        >
+          {status === "loading" ? "Please wait..." : "Login"}
         </button>
       </div>
     </form>

@@ -10,13 +10,13 @@ import Login from "auth/components/Login/Login";
 const LoginPage = () => {
   return (
     <Layout wide>
-      <Header>Login Header</Header>
+      <Header>Login</Header>
 
       <Main>
         <Login />
       </Main>
 
-      <Footer>Login Footer</Footer>
+      <Footer>Footer</Footer>
     </Layout>
   );
 };

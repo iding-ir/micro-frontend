@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+
 import useLogout from "auth/components/Logout/Logout";
 
 import Layout from "../Layout/Layout";
@@ -16,11 +17,11 @@ const LogoutPage = () => {
 
   return (
     <Layout wide>
-      <Header>Login Header</Header>
+      <Header>Logout</Header>
 
       <Main>Logging out...</Main>
 
-      <Footer>Login Footer</Footer>
+      <Footer>Footer</Footer>
     </Layout>
   );
 };
