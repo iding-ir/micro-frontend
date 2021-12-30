@@ -18,15 +18,15 @@ const App = () => (
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
       <Layout>
-        <Header>Product Header</Header>
+        <Header>Auth Header</Header>
 
         <Aside>
           <Auth />
         </Aside>
 
-        <Main>Product Main</Main>
+        <Main>Auth Main</Main>
 
-        <Footer>Product Footer</Footer>
+        <Footer>Auth Footer</Footer>
       </Layout>
     </PersistGate>
   </Provider>
