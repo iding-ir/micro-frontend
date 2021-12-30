@@ -44,8 +44,6 @@ module.exports = {
       name: "products",
       filename: "remoteEntry.js",
       remotes: {
-        home: "home@http://localhost:3000/remoteEntry.js",
-        auth: "auth@http://localhost:3002/remoteEntry.js",
         store: "store@http://localhost:3003/remoteEntry.js",
       },
       exposes: {},

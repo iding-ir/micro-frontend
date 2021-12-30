@@ -22,25 +22,31 @@ const Auth = (props: Props) => {
     <div>{`Welcome ${user.username}`}</div>
   ) : (
     <form>
-      <input
-        type="text"
-        value={email}
-        onChange={(event) => {
-          setEmail(event.target.value);
-        }}
-      />
+      <div>
+        <input
+          type="text"
+          value={email}
+          onChange={(event) => {
+            setEmail(event.target.value);
+          }}
+        />
+      </div>
 
-      <input
-        type="password"
-        value={password}
-        onChange={(event) => {
-          setPassword(event.target.value);
-        }}
-      />
+      <div>
+        <input
+          type="password"
+          value={password}
+          onChange={(event) => {
+            setPassword(event.target.value);
+          }}
+        />
+      </div>
 
-      <button type="button" onClick={handleLogin}>
-        Login
-      </button>
+      <div>
+        <button type="button" onClick={handleLogin}>
+          Login
+        </button>
+      </div>
     </form>
   );
 };

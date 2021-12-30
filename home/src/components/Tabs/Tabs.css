@@ -1,0 +1,9 @@
+.tabs {
+  flex-grow: 10;
+}
+
+.tabs a {
+  color: var(--color-white-light);
+  padding-right: var(--space-2);
+  margin-right: var(--space-2);
+}
