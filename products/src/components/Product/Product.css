@@ -1,0 +1,39 @@
+.product {
+  display: grid;
+  width: 100%;
+  grid-gap: 1rem;
+  padding: 1rem;
+  grid-template-areas:
+    "image name price"
+    "image description description";
+  grid-template-rows: 2rem minmax(auto, calc(100% - 4rem));
+  grid-template-columns: 100px 1fr 1fr;
+  border-radius: 4px;
+  background-color: var(--color-white-dark);
+  box-shadow: 5px 5px 5px var(--color-grey-light);
+}
+
+.product .image {
+  grid-area: image;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product .name {
+  grid-area: name;
+  line-height: 2rem;
+  margin: 0;
+}
+
+.product .price {
+  grid-area: price;
+  line-height: 2rem;
+  text-align: right;
+}
+
+.product .description {
+  grid-area: description;
+  margin: 0;
+  overflow: auto;
+}

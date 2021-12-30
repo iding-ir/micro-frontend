@@ -11,6 +11,11 @@ body {
   box-sizing: border-box;
 }
 
+body,
+body * {
+  box-sizing: border-box;
+}
+
 #app {
   --color-primary-light: #5c6bc0;
   --color-primary-main: #3949ab;

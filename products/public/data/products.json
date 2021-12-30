@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Chair",
+    "image": "http://localhost:3001/images/chair.jpg",
+    "description": "Commodo deserunt fugiat Lorem velit reprehenderit exercitation ex occaecat. Dolor tempor aliquip qui officia proident incididunt laboris nostrud enim quis Lorem aliqua. Ad nulla amet culpa qui cupidatat ex fugiat aliqua pariatur.",
+    "price": 80
+  },
+  {
+    "name": "Drawer",
+    "image": "http://localhost:3001/images/drawer.jpg",
+    "description": "Reprehenderit nisi ex Lorem laborum est magna irure aliqua Lorem aliqua et fugiat. Qui aute culpa in do. Mollit dolor eiusmod occaecat eu aute nostrud. In Lorem occaecat deserunt aute tempor consectetur quis incididunt. Ad quis ullamco exercitation incididunt irure enim.",
+    "price": 550
+  },
+  {
+    "name": "Lamp",
+    "image": "http://localhost:3001/images/lamp.jpg",
+    "description": "Sit Lorem dolore duis dolor. Dolore consequat elit aute ullamco nostrud sit et. Commodo dolore id pariatur quis consectetur aliquip. Officia voluptate aliquip anim velit velit aute sit voluptate cupidatat in ad fugiat. Fugiat adipisicing ex enim Lorem ipsum ex pariatur. Anim reprehenderit tempor non culpa proident aliqua consequat culpa. Do aliqua est eiusmod reprehenderit esse elit in dolore commodo fugiat.",
+    "price": 110
+  },
+  {
+    "name": "Sofa",
+    "image": "http://localhost:3001/images/sofa.jpg",
+    "description": "Qui ut sunt exercitation eu in proident tempor ea eu minim culpa commodo eiusmod. Amet irure dolor tempor dolor magna labore qui quis aute nulla. Culpa est consectetur do fugiat qui elit cupidatat pariatur.",
+    "price": 900
+  },
+  {
+    "name": "Table",
+    "image": "http://localhost:3001/images/table.jpg",
+    "description": "Et ad fugiat fugiat proident mollit Lorem duis exercitation. Dolore labore reprehenderit magna labore deserunt sint consequat veniam eu mollit laborum. Cillum do duis pariatur mollit sit. In ipsum labore sit est enim et in culpa irure duis amet id. Dolore occaecat non nulla commodo in elit. Magna commodo deserunt fugiat aliqua est proident cupidatat amet fugiat labore exercitation.",
+    "price": 75
+  },
+  {
+    "name": "Vase",
+    "image": "http://localhost:3001/images/vase.jpg",
+    "description": "Aliqua ad fugiat ea esse deserunt do anim fugiat mollit aliquip ex voluptate. Aliqua exercitation qui duis incididunt do labore enim in magna incididunt incididunt. Sunt ullamco aliqua duis fugiat minim fugiat fugiat.",
+    "price": 200
+  }
+]

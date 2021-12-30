@@ -6,13 +6,17 @@ import Aside from "../Aside/Aside";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 
+import Products from "products/components/Products";
+
 const ProductsPage = () => (
   <Layout>
     <Header>Products</Header>
 
     <Aside />
 
-    <Main>Products</Main>
+    <Main>
+      <Products />
+    </Main>
 
     <Footer>Footer</Footer>
   </Layout>

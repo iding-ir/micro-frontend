@@ -46,7 +46,9 @@ module.exports = {
       remotes: {
         store: "store@http://localhost:3003/remoteEntry.js",
       },
-      exposes: {},
+      exposes: {
+        "./components/Products": "./src/components/Products/Products.tsx",
+      },
       shared: {
         ...deps,
         react: {

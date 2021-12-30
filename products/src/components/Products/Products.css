@@ -1,0 +1,25 @@
+.products {
+  display: grid;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  border-radius: 4px;
+}
+
+@media only screen and (min-width: 960px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.products > * {
+  display: flex;
+  justify-content: stretch;
+  max-height: 350px;
+}

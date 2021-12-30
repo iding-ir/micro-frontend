@@ -50,6 +50,7 @@ module.exports = {
         "./app/store": "./src/app/store.ts",
         "./app/hooks": "./src/app/hooks.ts",
         "./features/auth/slice": "./src/features/auth/slice.ts",
+        "./features/products/slice": "./src/features/products/slice.ts",
       },
       shared: {
         ...deps,

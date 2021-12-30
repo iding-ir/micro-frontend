@@ -1,4 +1,4 @@
-import { ISignIn, ISignUp } from "../../types";
+import { ISignIn, ISignUp } from "auth/types";
 
 export const getSignIn = async (data: ISignIn) => {
   return new Promise((resolve) => {
