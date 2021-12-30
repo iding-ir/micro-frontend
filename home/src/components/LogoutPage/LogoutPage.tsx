@@ -1,26 +1,28 @@
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import useLogout from "auth/components/Logout/Logout";
 
-import { useAppDispatch, useAppSelector } from "store/app/hooks";
-import { signOut, selectAuth } from "store/features/auth/slice";
+import Layout from "../Layout/Layout";
+import Header from "../Header/Header";
+import Main from "../Main/Main";
+import Footer from "../Footer/Footer";
 
-const SignOut = () => {
-  const dispatch = useAppDispatch();
-  const navigate = useNavigate();
-  const status = useAppSelector(selectAuth).status;
+const LogoutPage = () => {
+  const { logout } = useLogout();
 
   useEffect(() => {
-    const logout = async () => {
-      await dispatch(signOut());
-
-      navigate("/");
-    };
-
     logout();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return null;
+  return (
+    <Layout wide>
+      <Header>Login Header</Header>
+
+      <Main>Logging out...</Main>
+
+      <Footer>Login Footer</Footer>
+    </Layout>
+  );
 };
 
-export default SignOut;
+export default LogoutPage;

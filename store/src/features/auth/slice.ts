@@ -62,6 +62,6 @@ export const slice = createSlice({
 
 // export const {} = slice.actions;
 
-export const selectAuth = (state: RootState) => state.auth;
+export const selectLogin = (state: RootState) => state.auth;
 
 export default slice.reducer;

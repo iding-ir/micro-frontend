@@ -1,28 +1,32 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-import { signIn, selectAuth } from "store/features/auth/slice";
+import "./Login.css";
+import { signIn, selectLogin } from "store/features/auth/slice";
 import { useAppDispatch, useAppSelector } from "store/app/hooks";
 
-interface Props {}
-
-const Auth = (props: Props) => {
+const Login = () => {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const user = useAppSelector(selectAuth).user;
-  const isLoggedIn = useAppSelector(selectAuth).isLoggedIn;
+  const user = useAppSelector(selectLogin).user;
+  const isLoggedIn = useAppSelector(selectLogin).isLoggedIn;
 
   const handleLogin = async () => {
     await dispatch(signIn({ email, password }));
+    console.log("nav");
+
+    navigate("/");
   };
 
   return isLoggedIn ? (
     <div>{`Welcome ${user.username}`}</div>
   ) : (
     <form>
-      <div>
+      <div className="group">
         <input
           type="text"
           value={email}
@@ -32,7 +36,7 @@ const Auth = (props: Props) => {
         />
       </div>
 
-      <div>
+      <div className="group">
         <input
           type="password"
           value={password}
@@ -42,7 +46,7 @@ const Auth = (props: Props) => {
         />
       </div>
 
-      <div>
+      <div className="group">
         <button type="button" onClick={handleLogin}>
           Login
         </button>
@@ -51,4 +55,4 @@ const Auth = (props: Props) => {
   );
 };
 
-export default Auth;
+export default Login;

@@ -8,13 +8,13 @@ import Footer from "../Footer/Footer";
 
 const ProductsPage = () => (
   <Layout>
-    <Header>Products Header</Header>
+    <Header>Products</Header>
 
-    <Aside>Products Aside</Aside>
+    <Aside />
 
-    <Main>Products Main</Main>
+    <Main>Products</Main>
 
-    <Footer>Products Footer</Footer>
+    <Footer>Footer</Footer>
   </Layout>
 );
 

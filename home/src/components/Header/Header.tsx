@@ -10,9 +10,9 @@ interface Props {
 const Header = ({ children }: Props) => {
   return (
     <header className="header">
-      <Tabs />
+      <div className="title">{children}</div>
 
-      {children}
+      <Tabs />
     </header>
   );
 };

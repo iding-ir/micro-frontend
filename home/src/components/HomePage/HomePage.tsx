@@ -8,13 +8,13 @@ import Footer from "../Footer/Footer";
 
 const HomePage = () => (
   <Layout>
-    <Header>Home Header</Header>
+    <Header>Home</Header>
 
-    <Aside>Home Aside</Aside>
+    <Aside />
 
-    <Main>Home Main</Main>
+    <Main>Welcome!</Main>
 
-    <Footer>Home Footer</Footer>
+    <Footer>Footer</Footer>
   </Layout>
 );
 

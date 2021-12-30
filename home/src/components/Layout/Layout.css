@@ -12,6 +12,14 @@
   height: 100%;
 }
 
+.layout.wide {
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 60px 1fr 100px;
+}
+
 @media only screen and (min-width: 600px) {
   .layout {
     grid-template-areas:
@@ -20,5 +28,14 @@
       "footer footer";
     grid-template-rows: 60px 1fr 100px;
     grid-template-columns: minmax(200px, 300px) 1fr;
+  }
+
+  .layout.wide {
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: 60px 1fr 100px;
+    grid-template-columns: 100%;
   }
 }

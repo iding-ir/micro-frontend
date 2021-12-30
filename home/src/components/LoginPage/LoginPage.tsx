@@ -2,24 +2,23 @@ import React from "react";
 
 import Layout from "../Layout/Layout";
 import Header from "../Header/Header";
-import Aside from "../Aside/Aside";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 
-import Auth from "auth/components/Auth/Auth";
+import Login from "auth/components/Login/Login";
 
-const LoginPage = () => (
-  <Layout>
-    <Header>Auth Header</Header>
+const LoginPage = () => {
+  return (
+    <Layout wide>
+      <Header>Login Header</Header>
 
-    <Aside>Auth Aside</Aside>
+      <Main>
+        <Login />
+      </Main>
 
-    <Main>
-      <Auth />
-    </Main>
-
-    <Footer>Auth Footer</Footer>
-  </Layout>
-);
+      <Footer>Login Footer</Footer>
+    </Layout>
+  );
+};
 
 export default LoginPage;

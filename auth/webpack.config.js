@@ -48,7 +48,8 @@ module.exports = {
       },
       exposes: {
         "./types": "./src/types/index.d.ts",
-        "./components/Auth/Auth": "./src/components/Auth/Auth.tsx",
+        "./components/Login/Login": "./src/components/Login/Login.tsx",
+        "./components/Logout/Logout": "./src/components/Logout/Logout.tsx",
       },
       shared: {
         ...deps,
